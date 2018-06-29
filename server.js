@@ -35,7 +35,7 @@ app.get('/restaurants', (req, res) => {
       console.error(err);
       res.status(500).json({ message: 'Internal server error' });
     });
-});
+}); 
 
 // can also request by ID
 app.get('/restaurants/:id', (req, res) => {
